@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'passionOne-regular';
+    src: url(../fonts/passionOne-regular.ttf)
+}
+
+@font-face {
+    font-family: 'sriracha-regular';
+    src: url(../fonts/sriracha-regular.ttf);
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'passionOne-regular';
+    ---fonte3: 'sriracha-regular';
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: antiquewhite;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: rgb(6, 6, 6);
+    color: aliceblue;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 45px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-weight: 600;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 45px;
+}
+
+header a, footer a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(---fonte3);
+    font-size: 3vw;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: burlywood;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.719) ;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 5px rgba(6, 6, 6, 0.162);
+    background-color: rgba(6, 6, 6, 0.135);
+    text-shadow: 5px 5px 5px rgba(6, 6, 6, 0.632);;
+}
+
+section#img-1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section#img-2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+}
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
